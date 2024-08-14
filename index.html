@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      href="@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');"
+    />
+  </head>
+
+  <body id="body">
+    <!--nav bar-->
+    <div class="container">
+      <nav id="header">
+        <div class="nav-menu" id="myNavMenu">
+          <ul class="nav-menu-list">
+            <li class="nav_list">
+              <a href="" class="nav-link active-link">Home</a>
+              <div class="circle"></div>
+            </li>
+
+            <li class="nav_list">
+              <a href="" class="nav-link"> about</a>
+              <div class="circle"></div>
+            </li>
+
+            <li class="nav_list">
+              <a href="" class="nav-link">portfolio</a>
+              <div class="circle"></div>
+            </li>
+
+            <li class="nav_list">
+              <a href="" class="nav-link"> contact</a>
+
+              <div class="circle"></div>
+            </li>
+          </ul>
+        </div>
+        <!--dark mode-->
+        <div class="mode">
+          <button onclick="darkBtn()" class="moon-sun" id="toggle-switch">
+            <i class="fa fa-moon-o" id="moon"></i>
+            <i class="fa fa-sun-o" id="sun"></i>
+          </div>
+        </div>
+        <div class="nav-menu-btn">
+            <i
+              class="fa fa-bars"
+              style="font-size: 24px"
+              ></i>
+        </div>
+      </nav>
+      <!--main-->
+      <main class="wrapper">
+        <section class="featured-box" id="home">
+          <div class="featured-grid">
+            <div class="left-section">
+              <div class="hello">
+                <p class="bold">Hello!</p>
+              </div>
+              <div class="featured-name">
+                <span class="typed-text"></span>
+              </div>
+              <div class="text-info">
+                <p>my name is Layla Tamer. I'm a Web developer</p>
+              </div>
+              <div class="text-btn">
+                <button class="btn hire-btn">Hire ME</button>
+                <button class="btn">Download CV</button>
+              </div>
+              <div class="social_icons">
+                <div class="icon_circle"></div>
+                <div class="icon"><i class="fa fa-linkedin"></i></div>
+                <div class="icon"><i class="fa fa-instagram"></i></div>
+                <div class="icon"><i class="fa fa-github"></i></div>
+                <div class="icon"><i class="fa fa-behance"></i></div>
+              </div>
+            </div>
+            <div class="right-section">
+              <div class="featured-image">
+                <div class="image">
+                  <img src="images/layla1.jpg" alt="photo" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--about box-->
+        <section class="section" id="about">
+          <div class="top-header">
+            <h1><span>Ab</span>out<span>Me</span></h1>
+          </div>
+          <div class="grid-container">
+            <div class="about-info">
+              <figure class="about-me">
+                <img src="images/layla1.jpg" alt="" class="profile" />
+                <h2>Web developer</h2>
+                <p>my name is Layla Tamer. I'm a Web developer</p>
+                <button class="about-me btn">Hire me</button>
+              </figure>
+            </div>
+            <div class="skills">
+              <div class="skills-box">
+                <label for="Html">Html</label>
+                <meter id="Html" value="10" min="0" max="10">
+                  10 out of 10
+                </meter>
+                <br />
+                <label for="JS">JS</label>
+                <meter id="JS" value="7" min="0" max="10">7 out of 10</meter>
+                <br />
+                <label for="Css">Css</label>
+                <meter id="Css" value="8" min="0" max="10">8 out of 10</meter>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--project box-->
+        <section class="section" id="projects">
+          <div class="top header">
+            <h1><span>pro</span>j<span>ects</span></h1>
+          </div>
+          <div class="projects-container">
+            <div class="slideshow-container">
+               <!-- Full-width images with number text -->
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+      <img src="images/1.jpeg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+      <img src="images/2.jpeg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+      <img src="images/3.jpeg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+      <img src="images/small .jpeg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+      <img src="images/study1.jpeg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+      <img src="images/4.jpeg" style="width:100%">
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </section>
+
+        <!--contact box-->
+        <section class="section" id="contact">
+          <div class="top header">
+            <h1>
+              <span>let</span>'s<span><br />connect</span>
+            </h1>
+            <span>Do you have a project in your mind , contact me here.</span>
+          </div>
+          <div class="grid-container">
+            <div class="contact-info">
+              <h2>Find me <i class="fa fa-level-down"></i></h2>
+              <p>
+                <i class="fa fa-envelope-o"></i> mail: laylatamer7@gmail.com
+              </p>
+              <p>
+                <i class="fa fa-mobile" style="font: size 20px">
+                  phone : 01050510170</i
+                >
+              </p>
+            </div>
+            <div class="form-control">
+              <div class="form inputs">
+                <input
+                  type="text"
+                  class="input-field"
+                  placeholder="Enter Your Name"
+                />
+                <input
+                  type="text"
+                  class="input-field"
+                  placeholder="Enter Your Email"
+                />
+              </div>
+              <div class="text-area">
+                <input
+                  type="text"
+                  class="input-subject"
+                  placeholder="subject"
+                />
+                <textarea placeholder="Message"></textarea>
+              </div>
+              <div class="form-button">
+                <button class="btn">Send <i class="fa fa-send-o"></i></button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <!--footer-->
+      <footer>
+        <div class="middle-footer">
+          <ul class="footer-menu">
+            <li class="footer-menu-list">
+              <a href="#home"> Home</a>
+            </li>
+            <li class="footer-menu-list">
+              <a href="#about">about</a>
+            </li>
+            <li class="footer-menu-list">
+              <a href="#portfolio">portfolio</a>
+            </li>
+            <li class="footer-menu-list">
+              <a href="#contact">contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-social-icons">
+          <div class="icon"><i class="fa fa-linkedin"></i></div>
+          <div class="icon"><i class="fa fa-instagram"></i></div>
+          <div class="icon"><i class="fa fa-github"></i></div>
+          <div class="icon"><i class="fa fa-behance"></i></div>
+        </div>
+        <div class="bottom-footer">
+          <p>
+            Copyright &copy;
+            <a href="#home" style="text-decoration: none">Layla Tamer</a> - All
+            rights reserved 2024
+          </p>
+        </div>
+      </footer>
+    </div>
+<script>
+  
+const darkModeToggle = document.getElementById("toggle-switch");
+const body = document.getElementById("body");
+const sunIcon = document.getElementById('sun')
+const moonIcon = document.getElementById('moon')
+   const navMenuBtn = document.querySelector(".nav-menu-btn");
+const navMenu = document.querySelector(".nav-menu");
+
+navMenuBtn.addEventListener("click", () => {
+  navMenu.classList.toggle("show");
+  navMenuBtn.classList.toggle("show");
+});
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+
+
+function darkBtn () {
+  darkModeToggle.addEventListener("click", () => {
+  body.classList.toggle("dark-mode");
+});
+} 
+
+
+
+  </script>
+  </body>
+
+</html>
